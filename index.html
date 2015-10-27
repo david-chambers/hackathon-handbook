@@ -13,6 +13,9 @@
         margin: 0 auto;
         max-width: 700px;
       }
+      h1,h2{
+          color: white;
+      }
       .well-small {
         max-width: 300px;
         margin: 0 auto 10px;
@@ -28,62 +31,71 @@
         margin-top: 10px;
         margin-bottom: 15px;
       }
+        body{
+            background-color: darkgreen;
+
+        }
     </style>
   </head>
   <body>
 
     <div class="container">
       <div class="row lead text-center">
-        <h3>The ArcGIS Hackathon Handbook</h3>
-        <p>Put maps in your apps!</p>
+        <h1>The Esri Hackathon Handbook</h1>
+        <h2>Calling all developers!...Put maps in your apps using the ArcGIS platform!</h2>
       </div>
       <!--Start of row 1-->
       <div class="row">
+          <div class="col-sm-4">
+              <div class="well well-small text-center">
+                  <h3><a href="https://developers.arcgis.com/en/">developers.arcgis.com</a></h3>
+                  <h4><a href="https://developers.arcgis.com/en/sign-up/">Free developer account!!!</a></h4>
+                  <p>
+                      <a href="https://developers.arcgis.com/en/features/layers/" class="btn btn-primary btn-wide-75 btn-max-width">Store you own data</a>
+                      <a href="http://www.arcgis.com/features/maps/index.html" class="btn btn-primary btn-wide-75 btn-max-width">Ready-to-Use Maps</a>
+                      <a href="https://developers.arcgis.com/en/features/geocoding/" class="btn btn-primary btn-wide-75 btn-max-width">Locate Addresses</a>
+                      <a href="https://developers.arcgis.com/en/features/visualization/" class="btn btn-primary btn-wide-75 btn-max-width">Visualization</a>
+                      <a href="http://www.arcgis.com/features/features-analytics.html" class="btn btn-primary btn-wide-75 btn-max-width">Analytics</a>
+                  </p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="well well-small text-center">
+                  <h3><a href="http://esri.github.io/esri-leaflet/">Web: Esri Leaflet</a></h3>
+                  <h4>I want to...</h4>
+                  <p>
+                      <a href="http://codepen.io/NebHtesmar/pen/GpQrbB" class="btn btn-primary btn-wide-100 btn-max-width">Put my points on the map</a>
+                      <a href="http://codepen.io/NebHtesmar/pen/jbZvLP" class="btn btn-primary btn-wide-100 btn-max-width">Put GeoJson on the Map</a>
+                      <a href="" class="btn btn-primary btn-wide-100 btn-max-width">Geocode</a>
+                      <a href="" class="btn btn-primary btn-wide-100 btn-max-width">Routing</a>
+                      <a target="_blank" href="http://esri.github.io/esri-leaflet/examples/" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
+                  </p>
+              </div>
+          </div>
         <div class="col-sm-4">
           <div class="well well-small text-center">
-              <h3>JavaScript</h3>
+              <h3>Web: JavaScript API</h3>
+              <h4>I want to...</h4>
               <p>
               <a href="./javascript/path/" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
               <a href="./javascript/path/" class="btn btn-primary btn-wide-75 btn-max-width">Add Feature Service</a>
               <a href="./javascript/path/" class="btn btn-primary btn-wide-75 btn-max-width">Symbolize Data</a>
-              <a href="./javascript/path/" class="btn btn-primary btn-wide-75 btn-max-width">Add Pop-Ups</a>
+
               <a target="_blank" href="https://developers.arcgis.com/javascript/jssamples" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
               </p>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="well well-small text-center">
-              <h3>Esri Leaflet</h3>
-              <p>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Add WMS Service</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Geocode</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Routing</a>
-              <a target="_blank" href="http://esri.github.io/esri-leaflet/examples/" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
-            </p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well well-small text-center">
-              <h3>Web AppBuilder</h3>
-              <p>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Cool thing here</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Other cool thing</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Sample Here</a>
-              <a target="_blank" href="https://developers.arcgis.com/web-appbuilder/" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
-            </p>
-            </div>
-        </div>
-        
+
+
       </div>
       <!--End of Row 1-->
 
       <!--Start Row 2 -->
       <div class="row">
+
         <div class="col-sm-4">
           <div class="well well-small text-center">
-              <h3>Android</h3>
+              <h3>Mobile: Android</h3>
               <p>
               <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
               <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Geotrigger</a>
@@ -93,11 +105,9 @@
             </p>
             </div>
         </div>
-      
-      
         <div class="col-sm-4">
           <div class="well well-small text-center">
-              <h3>iOS</h3>
+              <h3>Mobile: iOS</h3>
               <p>
               <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
               <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Geotrigger</a>
@@ -107,19 +117,17 @@
             </p>
             </div>
         </div>
+          <div class="col-sm-4">
+              <div class="well well-small text-center">
+                  <h3>Native: Java</h3>
+                  <p>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">HTML 5 Geolocation</a>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Do awesome stuff</a>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">More awesome stuff</a>
+                  </p>
+              </div>
+          </div>
 
-        <div class="col-sm-4">
-          <div class="well well-small text-center">
-              <h3>Qt</h3>
-              <p>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Other thing</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Cool thing</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Cool thing 2</a>
-              <a target="_blank" href="https://developers.arcgis.com/qt/" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
-            </p>
-            </div>
-        </div>  
       </div>
 
       <!--End row 2-->
@@ -127,9 +135,35 @@
 
       <!--Start row 3-->
       <div class="row">
-        <div class="col-sm-4">
+          <div class="col-sm-4">
+              <div class="well well-small text-center">
+                  <h3><a href="https://developers.arcgis.com/web-appbuilder/">Web AppBuilder</a></h3>
+                  <h4><a href="http://doc.arcgis.com/en/web-appbuilder//">What is it?</a></h4>
+                  <p>
+                      <a href="http://doc.arcgis.com/en/web-appbuilder/create-apps/make-first-app.htm" class="btn btn-primary btn-wide-75 btn-max-width">Configure, no coding</a>
+                      <a href="https://developers.arcgis.com/web-appbuilder/sample-code/create-custom-in-panel-widget.htm" class="btn btn-primary btn-wide-75 btn-max-width">Extend with Widget </a>
+                      <a href="https://developers.arcgis.com/web-appbuilder/guide/create-a-theme.htm" class="btn btn-primary btn-wide-75 btn-max-width">Extend with Theme</a>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Sample Here</a>
+                      <a target="_blank" href="https://developers.arcgis.com/web-appbuilder/" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
+                  </p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="well well-small text-center">
+                  <h3>App Studio</h3>
+                  <h4>What is it?</h4>
+                  <p>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Put Map in App</a>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Other thing</a>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Cool thing</a>
+                      <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Cool thing 2</a>
+                      <a target="_blank" href="https://developers.arcgis.com/qt/" class="btn btn-link btn-wide-75 btn-max-width">More Samples...</a>
+                  </p>
+              </div>
+          </div>
+          <div class="col-sm-4">
           <div class="well well-small text-center">
-              <h3>Google vs. Esri</h3>
+              <h3>How is ArcGIS different then Google Maps?</h3>
               <p>
               <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Some Sample</a>
               <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Other Sample</a>
@@ -138,28 +172,8 @@
             </p>
             </div>
         </div>
-        <div class="col-sm-4">
-          <div class="well well-small text-center">
-              <h3>Misc</h3>
-              <p>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">HTML 5 Geolocation</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Do awesome stuff</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">More awesome stuff</a>
-            </p>
-          </div>
-        </div>
-      
 
-       <div class="col-sm-4">
-          <div class="well well-small text-center">
-              <h3>Misc</h3>
-              <p>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">Geotrigger SDK</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">test</a>
-              <a href="" class="btn btn-primary btn-wide-75 btn-max-width">test</a>
-            </p>
-          </div>
-        </div>
+
       </div>
       <!--End row 3 -->
 
