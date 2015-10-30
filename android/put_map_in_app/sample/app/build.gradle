@@ -11,6 +11,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    packagingOptions{
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -24,4 +29,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:design:22.2.1'
+    compile 'com.esri.arcgis.android:arcgis-android:10.2.7'
 }
