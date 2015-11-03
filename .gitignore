@@ -4,3 +4,7 @@
 .idea/workspace.xml
 
 *.xml
+
+*.iml
+
+*.pro
