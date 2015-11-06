@@ -110,6 +110,7 @@ dependencies {
         mapoptions.ZoomLevel="16">
 </com.esri.android.map.MapView>
 ```
+[Completed file here](put_map_in_app/sample/app/src/main/res/layout/content_main.xml)
 
 4. In the Project view window, under app, navigate to src > main > and double-click 'AndroidManifest.xml'.  Here we will add in our permissions.  Android is a permissions-separated operating system. Depending on what ArcGIS capabilities you use in your app, you may need to add permissions to your manifest, as follows. Be sure not to include permissions for capabilities not included in your app.
 
@@ -130,9 +131,11 @@ The following code example (for the AndroidManifest.xml file) includes permissio
         android:glEsVersion="0x00020000"
         android:required="true" />
 ```
+[Completed file here](put_map_in_app/sample/app/src/main/AndroidManifest.xml)
 
 5. Sync your Gradle Files and run your app!
 
+![Alt text](http://i.imgur.com/vIf0lAD.gif?raw=true "Optional Title")
 ## Further Reading
 Esri Guides on various topics are available as part of the [Android Documentation][android-docs], including initial [Install and Setup][install-setup] and [Add a Map to your app][add-map-to-app].
 
