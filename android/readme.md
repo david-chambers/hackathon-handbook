@@ -30,7 +30,7 @@ Note: In version 1.4 of Android Studio there are two files in the project view /
 
 Awesome! First project created...it should look something like this in the 'Design' view.  Also test running it on an emulator or your physical device that is plugged in to USB
 
-TODO: image in help_images
+![Alt text](/help_images/firstApp.jpg?raw=true "Optional Title")
 
 ## Add the ArcGIS Runtime for Android dependency
 
