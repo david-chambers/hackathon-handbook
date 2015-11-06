@@ -34,9 +34,21 @@ Awesome! First project created...it should look something like this in the 'Desi
 
 ## Add the ArcGIS Runtime for Android dependency
 
-1. In the Project view select the projects root build.gradle file and add in the following code:
+1. In the Android 'Project' view select the projects root build.gradle file and add in the following code
 
-TODO: <image here>
+'''
+allprojects {
+    repositories {
+        jcenter()
+        // add the esri arcgis maven repo
+        maven {
+            url 'http://esri.bintray.com/arcgis'
+        }
+    }
+}
+'''
+
+
 
 2. Next, open the app/ directory and double click on the modules build.gradle file.  Here we are going to add the dependency and packagingOptions:
 
