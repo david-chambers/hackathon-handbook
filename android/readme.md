@@ -48,7 +48,7 @@ allprojects {
 }
 ```
 
-
+[Completed file here](put_map_in_app/sample/build.gradle)
 
 2. Next, in the Android 'Project' view, open the app/ directory and double click on the modules build.gradle file.  Here we are going to add the dependency and packagingOptions:
 
@@ -89,6 +89,7 @@ dependencies {
     compile 'com.esri.arcgis.android:arcgis-android:10.2.7'
 }
 ```
+[Completed file here](put_map_in_app/sample/app/build.gradle)
 
 3. In the Android Studio toolbar, click Sync Project with Gradle  Files!
 
@@ -131,8 +132,6 @@ The following code example (for the AndroidManifest.xml file) includes permissio
 ```
 
 5. Sync your Gradle Files and run your app!
-
-![Alt text](help_images/putMapInApp.jpg?raw=true "Optional Title")
 
 ## Further Reading
 Esri Guides on various topics are available as part of the [Android Documentation][android-docs], including initial [Install and Setup][install-setup] and [Add a Map to your app][add-map-to-app].
