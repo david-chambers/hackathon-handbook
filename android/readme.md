@@ -12,8 +12,8 @@ This sample app and guide are a self-contained skeleton app to show the bare min
 
 ### Prerequisites
 
-1. Android Studio from Google
-2. A device that is development enabled
+1. Download and install [Android Studio][android-studio] from Google
+2. An Android device that is [set up for development][developer-enabled-device]
 
 
 ## Create the project
@@ -77,4 +77,5 @@ The SDK's [reference doc](Docs) is also available in this repo.
 [geotrigger-docs]: https://developers.arcgis.com/en/geotrigger-service
 [geotrigger-api-ref]: https://developers.arcgis.com/en/geotrigger-service/api-reference
 [CocoaPods]: http://cocoapods.org/
-[sample]: https://github.com/david-chambers/hackathon-handbook/tree/master/android/put_map_in_app/sample
+[android-studio]: https://developer.android.com/sdk/index.html
+[developer-enabled-device]: http://developer.android.com/tools/device.html
