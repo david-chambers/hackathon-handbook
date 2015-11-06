@@ -40,7 +40,7 @@ Awesome! First project created...it should look something like this in the 'Desi
 allprojects {
     repositories {
         jcenter()
-        // add the esri arcgis maven repo
+        // ADD ESRI MAVEN REPO
         maven {
             url 'http://esri.bintray.com/arcgis'
         }
@@ -50,9 +50,45 @@ allprojects {
 
 
 
-2. Next, open the app/ directory and double click on the modules build.gradle file.  Here we are going to add the dependency and packagingOptions:
+2. Next, in the Android 'Project' view, open the app/ directory and double click on the modules build.gradle file.  Here we are going to add the dependency and packagingOptions:
 
-TODO: <image here>
+```
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.esri.put_map_in_app"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    //ADD PACKAGING OPTIONS
+    packagingOptions{
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    //ADD ESRI DEPENDENCY
+    compile 'com.esri.arcgis.android:arcgis-android:10.2.7'
+}
+```
 
 3. In the Android Studio toolbar, click Sync Project with Gradle  Files!
 
@@ -62,7 +98,37 @@ TODO: <image here>
 1. In the Project view window, under app, navigate to src > main > res > layout then double-click 'content_main.xml' 
 2. At the bottom-left of the window, click Text to show the XML view of the layout.  By default, there are two tags in 'content_main.xml'
 3. Select the entire TextView XML element and replace it with MapView element as shown below.  
-4. Add in uses permissions (maybe put this higher up)?
+
+```xml
+<com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        mapoptions.MapType="Streets"
+        mapoptions.center="34.056215, -117.195668"
+        mapoptions.ZoomLevel="16">
+</com.esri.android.map.MapView>
+```
+
+4. In the Project view window, under app, navigate to src > main > and double-click 'AndroidManifest.xml'.  Here we will add in our permissions.  Android is a permissions-separated operating system. Depending on what ArcGIS capabilities you use in your app, you may need to add permissions to your manifest, as follows. Be sure not to include permissions for capabilities not included in your app.
+
+ArcGIS capabilities that require permissions:
+
+- Access to the Internet (most apps will require this)
+- Access to files on disk (some apps will require this)
+- Access to the device's GPS will require fine location permissions
+- Apps that use MapView will require using OpenGL 2.x.
+The following code example (for the AndroidManifest.xml file) includes permissions for all capabilities. 
+
+```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+```
 
 ## Further Reading
 Guides on various topics are available as part of the [Geotrigger Documentation][geotrigger-docs], including interacting with the `AGSGTGeotriggerManager`, working with the Geotrigger API, and configuring push notifications. Information about other platforms and the API itself are also available.
