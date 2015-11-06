@@ -36,7 +36,7 @@ Awesome! First project created...it should look something like this in the 'Desi
 
 1. In the Android 'Project' view select the projects root build.gradle file and add in the following code
 
-'''
+```
 allprojects {
     repositories {
         jcenter()
@@ -46,7 +46,7 @@ allprojects {
         }
     }
 }
-'''
+```
 
 
 
