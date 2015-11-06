@@ -3,7 +3,7 @@
 
 ## Overview
 
-This sample app and guide are a self-contained skeleton app to show the bare minimum required of what you need to do to put a map in your app using the ArcGIS Runtime SDK for Android.  This walk through will grant full access to the ArcGIS Runtime SDK for Android classes - a powerful mapping SDK targeted for android development with simple tools and lots of sample code to make your dreams a reality.  This guide aims to be a reference point for rapidly getting started and combines exisitng resources from official documentation.  It is tested at the most recent version of Google's Android Studio (1.4) to ensure minimal headaches and rapid set-up time.  You also may find the [sample!](put_map_in_app/sample) project helpful to see a project with the steps outlined below already completed.  Lets get started:
+This sample app and guide are a self-contained skeleton app to show the bare minimum required of what you need to do to put a map in your app using the ArcGIS Runtime SDK for Android.  This walk through will grant full access to the ArcGIS Runtime SDK for Android classes - a powerful mapping SDK targeted for android development with simple tools and lots of sample code to make your dreams a reality.  This guide aims to be a reference point for rapidly getting started and combines exisitng resources from official documentation.  It is tested at the most recent version of Google's Android Studio (1.4) to ensure minimal headaches and rapid set-up time.  You also may find the [sample](put_map_in_app/sample) project helpful to see a project with the steps outlined below already completed.  Lets get started:
 
 
 
@@ -17,35 +17,20 @@ This sample app and guide are a self-contained skeleton app to show the bare min
 
 
 ## Create the project in Android Studio
-1. Open Android Studio and select 'Start a new Android Studio Project'
 
-TODO: <image here>
+Follow these steps in the android documentation for creating your first project
 
-In the 'New Project' window specify the application name, company domain, and a Project location.
+[Creating an Android Project][first-project]
 
-TODO: <image here>
+Note: Now, with version 1.4 of Android Studio a Floating Action Bar is included in the blank activity.  You can delete this by following these [steps][floating-action] 
 
-Specify the platforms your app will run on
+Note: In version 1.4 of Android Studio there are two files in the project view /app/src/res/layout.  Select 'empty activity' to default to a single version or replace content_main.xml with activity_main.xml references.
 
-TODO: <image here>
+[Explanation][two-xml-files]
 
-Select Blank Activity
+Awesome! First project created...it should look something like this in the 'Design' view.  Also test running it on an emulator or your physical device that is plugged in to USB
 
-TODO: <image here>
-
-Customize the Activity
-
-TODO: <image here>
-
-Switch to project view
-
-TODO: <image here>
-
-Now, with version 1.4 of Android Studio a Floating Action Bar is included in the blank activity.  You can delete this by following these steps:  
-
-TODO:
-http://stackoverflow.com/questions/33205146/how-to-remove-email-icon-from-android-studio-emulation
-
+TODO: image in help_images
 
 ## Add the ArcGIS Runtime for Android dependency
 
@@ -79,3 +64,6 @@ The SDK's [reference doc](Docs) is also available in this repo.
 [CocoaPods]: http://cocoapods.org/
 [android-studio]: https://developer.android.com/sdk/index.html
 [developer-enabled-device]: http://developer.android.com/tools/device.html
+[first-project]: http://developer.android.com/training/basics/firstapp/creating-project.html
+[floating-action]: http://stackoverflow.com/questions/33205146/how-to-remove-email-icon-from-android-studio-emulation
+[two-xml-files]: http://stackoverflow.com/questions/32880722/what-is-the-role-of-content-main-xml-in-android-studio-1-4
