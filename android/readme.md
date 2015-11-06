@@ -3,7 +3,7 @@
 
 ## Overview
 
-This sample app and guide are a self-contained skeleton app to show the bare minimum required of what you need to do to put a map in your app and have full access to the ArcGIS Runtime SDK for Android classes - a powerful mapping SDK targeted for android development with simple tools and lots of sample code to make your dreams a reality.  This guide aims to be a reference point for rapidly getting started and combines resources from our existing documentation.  It is tested at the most recent version of Google's Android Studio to ensure minimal headaches and rapid set-up time.  You also may find the sample project helpful to see a project with the steps outlined below already completed.  Lets get started:
+This sample app and guide are a self-contained skeleton app to show the bare minimum required of what you need to do to put a map in your app using the ArcGIS Runtime SDK for Android.  This walk through will grant full access to the ArcGIS Runtime SDK for Android classes - a powerful mapping SDK targeted for android development with simple tools and lots of sample code to make your dreams a reality.  This guide aims to be a reference point for rapidly getting started and combines exisitng resources from official documentation.  It is tested at the most recent version of Google's Android Studio (1.4) to ensure minimal headaches and rapid set-up time.  You also may find the [sample](sample) project helpful to see a project with the steps outlined below already completed.  Lets get started:
 
 
 
@@ -77,3 +77,4 @@ The SDK's [reference doc](Docs) is also available in this repo.
 [geotrigger-docs]: https://developers.arcgis.com/en/geotrigger-service
 [geotrigger-api-ref]: https://developers.arcgis.com/en/geotrigger-service/api-reference
 [CocoaPods]: http://cocoapods.org/
+[sample]: https://github.com/david-chambers/hackathon-handbook/tree/master/android/put_map_in_app/sample
