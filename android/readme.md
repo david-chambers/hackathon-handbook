@@ -130,16 +130,16 @@ The following code example (for the AndroidManifest.xml file) includes permissio
         android:required="true" />
 ```
 
+5. Sync your Gradle Files and run your app!
+
+![Alt text](help_images/putMapInApp.jpg?raw=true "Optional Title")
+
 ## Further Reading
-Guides on various topics are available as part of the [Geotrigger Documentation][geotrigger-docs], including interacting with the `AGSGTGeotriggerManager`, working with the Geotrigger API, and configuring push notifications. Information about other platforms and the API itself are also available.
+Esri Guides on various topics are available as part of the [Android Documentation][android-docs], including initial [Install and Setup][install-setup] and [Add a Map to your app][add-map-to-app].
 
-The SDK's [reference doc](Docs) is also available in this repo.
-
-[esri-site]: http://www.esri.com
-[arcgis-dev-site]: https://developers.arcgis.com
-[geotrigger-docs]: https://developers.arcgis.com/en/geotrigger-service
-[geotrigger-api-ref]: https://developers.arcgis.com/en/geotrigger-service/api-reference
-[CocoaPods]: http://cocoapods.org/
+[android-docs]: https://developers.arcgis.com/android/guide/welcome-to-the-help-for-arcgis-runtime-sdk-for-android.htm
+[install-setup]: https://developers.arcgis.com/android/guide/install-and-set-up.htm
+[add-map-to-app]: https://developers.arcgis.com/android/guide/develop-your-first-map-app.htm
 [android-studio]: https://developer.android.com/sdk/index.html
 [developer-enabled-device]: http://developer.android.com/tools/device.html
 [first-project]: http://developer.android.com/training/basics/firstapp/creating-project.html
