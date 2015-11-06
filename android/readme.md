@@ -30,13 +30,25 @@ Note: In version 1.4 of Android Studio there are two files in the project view /
 
 Awesome! First project created...it should look something like this in the 'Design' view.  Also test running it on an emulator or your physical device that is plugged in to USB
 
-TODO: image in help_images
+![Alt text](help_images/firstApp.jpg?raw=true "Optional Title")
 
 ## Add the ArcGIS Runtime for Android dependency
 
-1. In the Project view select the projects root build.gradle file and add in the following code:
+1. In the Android 'Project' view select the projects root build.gradle file and add in the following code
 
-TODO: <image here>
+```
+allprojects {
+    repositories {
+        jcenter()
+        // add the esri arcgis maven repo
+        maven {
+            url 'http://esri.bintray.com/arcgis'
+        }
+    }
+}
+```
+
+
 
 2. Next, open the app/ directory and double click on the modules build.gradle file.  Here we are going to add the dependency and packagingOptions:
 
