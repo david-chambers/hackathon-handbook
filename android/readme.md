@@ -36,60 +36,60 @@ Awesome! First project created...it should look something like this in the 'Desi
 
 1. In the Android 'Project' view select the projects root build.gradle file and add in the following code
 
-```
-allprojects {
-    repositories {
-        jcenter()
-        // ADD ESRI MAVEN REPO
-        maven {
-            url 'http://esri.bintray.com/arcgis'
+    ```
+    allprojects {
+        repositories {
+            jcenter()
+            // ADD ESRI MAVEN REPO
+            maven {
+                url 'http://esri.bintray.com/arcgis'
+            }
         }
     }
-}
-```
+    ```
 
-[Completed file here](put_map_in_app/sample/build.gradle)
+    [Completed file here](put_map_in_app/sample/build.gradle)
 
 2. Next, in the Android 'Project' view, open the app/ directory and double click on the modules build.gradle file.  Here we are going to add the dependency and packagingOptions:
 
-```
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
-
-    defaultConfig {
-        applicationId "com.esri.put_map_in_app"
-        minSdkVersion 15
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
-    }
-    //ADD PACKAGING OPTIONS
-    packagingOptions{
-        exclude 'META-INF/LGPL2.1'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/NOTICE'
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    ```
+    apply plugin: 'com.android.application'
+    
+    android {
+        compileSdkVersion 22
+        buildToolsVersion "22.0.1"
+    
+        defaultConfig {
+            applicationId "com.esri.put_map_in_app"
+            minSdkVersion 15
+            targetSdkVersion 22
+            versionCode 1
+            versionName "1.0"
+        }
+        //ADD PACKAGING OPTIONS
+        packagingOptions{
+            exclude 'META-INF/LGPL2.1'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/NOTICE'
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
         }
     }
-}
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'com.android.support:design:22.2.1'
-    //ADD ESRI DEPENDENCY
-    compile 'com.esri.arcgis.android:arcgis-android:10.2.7'
-}
-```
-[Completed file here](put_map_in_app/sample/app/build.gradle)
+    
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:22.2.1'
+        compile 'com.android.support:design:22.2.1'
+        //ADD ESRI DEPENDENCY
+        compile 'com.esri.arcgis.android:arcgis-android:10.2.7'
+    }
+    ```
+    [Completed file here](put_map_in_app/sample/app/build.gradle)
 
 3. In the Android Studio toolbar, click Sync Project with Gradle  Files!
 
@@ -100,38 +100,38 @@ dependencies {
 2. At the bottom-left of the window, click Text to show the XML view of the layout.  By default, there are two tags in 'content_main.xml'
 3. Select the entire TextView XML element and replace it with MapView element as shown below.  
 
-```xml
-<com.esri.android.map.MapView
-        android:id="@+id/map"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        mapoptions.MapType="Streets"
-        mapoptions.center="34.056215, -117.195668"
-        mapoptions.ZoomLevel="16">
-</com.esri.android.map.MapView>
-```
-[Completed file here](put_map_in_app/sample/app/src/main/res/layout/content_main.xml)
+    ```xml
+    <com.esri.android.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            mapoptions.MapType="Streets"
+            mapoptions.center="34.056215, -117.195668"
+            mapoptions.ZoomLevel="16">
+    </com.esri.android.map.MapView>
+    ```
+    [Completed file here](put_map_in_app/sample/app/src/main/res/layout/content_main.xml)
 
 4. In the Project view window, under app, navigate to src > main > and double-click 'AndroidManifest.xml'.  Here we will add in our permissions.  Android is a permissions-separated operating system. Depending on what ArcGIS capabilities you use in your app, you may need to add permissions to your manifest, as follows. Be sure not to include permissions for capabilities not included in your app.
 
-ArcGIS capabilities that require permissions:
+    ArcGIS capabilities that require permissions:
+    
+    - Access to the Internet (most apps will require this)
+    - Access to files on disk (some apps will require this)
+    - Access to the device's GPS will require fine location permissions
+    - Apps that use MapView will require using OpenGL 2.x.
+    The following code example (for the AndroidManifest.xml file) includes permissions for all capabilities. 
 
-- Access to the Internet (most apps will require this)
-- Access to files on disk (some apps will require this)
-- Access to the device's GPS will require fine location permissions
-- Apps that use MapView will require using OpenGL 2.x.
-The following code example (for the AndroidManifest.xml file) includes permissions for all capabilities. 
-
-```xml
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
-```
-[Completed file here](put_map_in_app/sample/app/src/main/AndroidManifest.xml)
+    ```xml
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true" />
+    ```
+    [Completed file here](put_map_in_app/sample/app/src/main/AndroidManifest.xml)
 
 5. Sync your Gradle Files and run your app!
 
