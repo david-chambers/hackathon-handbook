@@ -1,7 +1,7 @@
 # hackathon-handbook
 Quick samples for putting maps in apps using Esri API and SDKs.  Written with the non-GIS developer in mind.  Someone that has no idea what GIS is and who Esri is.
 <br><br>
-<a href="http://david-chambers.github.io/hackathon-handbook/">View Live Sample (master branch)</a><br>
+
 <a href="http://hackathon-handbook.com/">View Live Sample (gh-pages branch)</a>
 
 <br><br>
