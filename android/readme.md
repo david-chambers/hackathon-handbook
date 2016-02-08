@@ -3,7 +3,7 @@
 
 ## Overview
 
-This sample app and guide are a self-contained skeleton app to show the bare minimum required of what you need to do to put a map in your app using the ArcGIS Runtime SDK for Android.  This walk through will grant full access to the ArcGIS Runtime SDK for Android classes - a powerful mapping SDK targeted for android development with simple tools and lots of sample code to make your dreams a reality.  This guide aims to be a reference point for rapidly getting started and combines exisitng resources from official documentation.  It is tested at the most recent version of Google's Android Studio (1.4) to ensure minimal headaches and rapid set-up time.  You also may find the [sample](put_map_in_app/sample) project helpful to see a project with the steps outlined below already completed.  Lets get started:
+This sample app and guide are a self-contained skeleton app to show the bare minimum required of what you need to do to put a map in your app using the ArcGIS Runtime SDK for Android.  This walk through will grant full access to the ArcGIS Runtime SDK for Android classes - a powerful mapping SDK targeted for android development with simple tools and lots of sample code to make your dreams a reality.  This guide aims to be a reference point for rapidly getting started and combines exisitng resources from official documentation.  It is tested at the most recent version of Google's Android Studio (1.5.1) to ensure minimal headaches and rapid set-up time.  You also may find the [sample](put_map_in_app/sample) project helpful to see a project with the steps outlined below already completed.  Lets get started:
 
 
 
@@ -22,9 +22,9 @@ Follow these steps in the android documentation for creating your first project
 
 [Creating an Android Project][first-project]
 
-Note: Now, with version 1.4 of Android Studio a Floating Action Bar is included in the blank activity.  You can delete this by following these [steps][floating-action] 
+Note: Now, with version 1.5.1 of Android Studio a Floating Action Bar is included in the blank activity.  You can delete this by following these [steps][floating-action] 
 
-Note: In version 1.4 of Android Studio there are two files in the project view /app/src/res/layout.  Select 'empty activity' to default to a single version or replace content_main.xml with activity_main.xml references.
+Note: In version 1.5.1 of Android Studio there are two files in the project view /app/src/res/layout when creating a new blank activity.  Select 'empty activity' to default to a single file.  The Blank Activity contains code that you do not need for getting started.
 
 [Explanation][two-xml-files]
 
